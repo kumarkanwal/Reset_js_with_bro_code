@@ -49,4 +49,25 @@
 
 // #7 increment and decrement Task
 
+let label = document.getElementById("myLabel");
+let decrement = document.getElementById("decrement");
+let increment = document.getElementById("increment");
+let reset = document.getElementById("reset");
+
+
+let lableValue =  label.innerText;
+lableValue = Number( lableValue);
+
+
+decrement.onclick = function () {
+    label.innerText = lableValue--;
+}
+increment.onclick = function () {
+    label.innerText = lableValue++;
+}
+reset.onclick = function () {
+    lableValue = 0;
+    label.innerText = lableValue;
+}
+
 
