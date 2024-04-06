@@ -53,12 +53,8 @@
 }
  */
 
- body{
-    font-family: Verdana, Geneva, sans-serif;
-    text-align: center;
- }
 
- #myButton{
+ /* #myButton{
     font-size: 3rem;
     border-radius: 5px;
     padding: 5px;
@@ -67,4 +63,14 @@
 
  #myLabel{
     font-size: 3rem;
+ } */
+
+ 
+ body{
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
  }
+
+ 
+
+

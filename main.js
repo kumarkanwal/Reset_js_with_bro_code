@@ -3,7 +3,7 @@
 // document.getElementById('myBtn').onclick = () =>{
 //     username = document.getElementById('myText').value;
 //     document.getElementById('myH1').textContent = `Hello  ${ username }`;
-    
+
 
 // }
 
@@ -43,7 +43,7 @@
 
 
 
- 
+
 // }
 
 
@@ -73,16 +73,56 @@
 
 // #9 random number generator.
 
-const myButton = document.getElementById('myButton');
-const myLabel = document.getElementById('myLabel');
-let randomNumber;
-myButton.onclick = ()=>{
-    randomNumber = Math.ceil(Math.random() * 6);
-    myLabel.innerText = randomNumber
+// const myButton = document.getElementById('myButton');
+// const myLabel = document.getElementById('myLabel');
+// let randomNumber;
+// myButton.onclick = ()=>{
+//     randomNumber = Math.ceil(Math.random() * 6);
+//     myLabel.innerText = randomNumber
+// }
+
+
+
+// 11 checked property 
+
+
+
+
+// console.log(randomNumber);
+
+
+const myText = document.getElementById('myText');
+const myBtn = document.getElementById('myBtn');
+const result = document.getElementById('result');
+
+let age;
+
+myBtn.onclick = () => {
+
+    age = myText.value;
+    age = Number(age);
+    if (age >= 100) {
+        // console.log("You are Too old to enter this site");
+        result.innerText = "You are Too old to enter this site" 
+    } else if (age == 0) {
+
+        // console.log("You can't enter. you are just born");
+        result.innerText = "You can't enter. you are just born"
+
+
+    } else if (age >= 18) {
+        // console.log("You are old enough to enter this site");
+        result.innerText ="You are old enough to enter this site"
+        
+
+    } else if (age < 0) {
+        console.log("You can't be below 0");
+        
+        // console.log("You are old enough to enter this site");
+        result.innerText = "You can't be below 0";
+    } else {
+        // console.log("You must be 18+ to enter this site");
+        result.innerText = "You must be 18+ to enter this site"
+
+    }
 }
-
-
-
-
-
-console.log(randomNumber);
