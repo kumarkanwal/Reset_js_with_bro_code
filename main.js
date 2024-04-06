@@ -49,25 +49,40 @@
 
 // #7 increment and decrement Task
 
-let label = document.getElementById("myLabel");
-let decrement = document.getElementById("decrement");
-let increment = document.getElementById("increment");
-let reset = document.getElementById("reset");
+// const label = document.getElementById("myLabel");
+// const decrement = document.getElementById("decrement");
+// const increment = document.getElementById("increment");
+// const reset = document.getElementById("reset");
 
 
-let lableValue =  label.innerText;
-lableValue = Number( lableValue);
+// let lableValue =  label.innerText;
+// lableValue = Number( lableValue);
 
 
-decrement.onclick = function () {
-    label.innerText = lableValue--;
+// decrement.onclick = function () {
+//     label.innerText = lableValue--;
+// }
+// increment.onclick = function () {
+//     label.innerText = lableValue++;
+// }
+// reset.onclick = function () {
+//     lableValue = 0;
+//     label.innerText = lableValue;
+// }
+
+
+// #9 random number generator.
+
+const myButton = document.getElementById('myButton');
+const myLabel = document.getElementById('myLabel');
+let randomNumber;
+myButton.onclick = ()=>{
+    randomNumber = Math.ceil(Math.random() * 6);
+    myLabel.innerText = randomNumber
 }
-increment.onclick = function () {
-    label.innerText = lableValue++;
-}
-reset.onclick = function () {
-    lableValue = 0;
-    label.innerText = lableValue;
-}
 
 
+
+
+
+console.log(randomNumber);
